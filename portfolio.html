@@ -1,0 +1,256 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>Портфолио</title>
+		<meta charset="UTF-8">
+		 <link href="http://allfont.ru/allfont.css?fonts=bodoni" rel="stylesheet" type="text/css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/style_portfolio.css" type="text/css" media="all">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- accordion -->
+		<script src="js/my_contact.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="js/jquery-ui.js"></script>		
+		
+
+    
+
+     <!--[if lt IE 8]>
+   <div style=' clear: both; text-align:center; position: relative;'>
+     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+       <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+    </a>
+  </div>
+<![endif]-->
+     <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    	<link  type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+		
+		<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+			<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+		});
+	</script>
+		
+	</head>	
+	<body>
+		<header> 
+			<div  class="wrap">
+				<a class="logo" href="index.html">
+					<i class="site_title">Обручка</i>
+					<i class="site_description">Свадебный салон</i>
+				</a>
+				<i class="nav_btn"></i>
+				<nav>
+					<ul class="first_level">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="#">Портфолио</a>
+							<ul class="second_level">
+								<li><a href="#">Свадебные платья</a></li>
+								<li><a href="#">Вечерние платья</a></li>
+								<li><a href="#">Детские платья</a></li>
+							</ul>
+						</li>						
+						<li><a href="contact.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>		
+		</header>
+		<div class="wrap">
+		    <img src="img/slide.jpg" alt="#">
+			<article>
+				<div class="fotos">
+					<a class="fancybox-effects-d" href="img/foto/1.jpg" title="Кристина - платье Кармелита"><img src="img/foto/1.jpg" alt="" /></a>
+				</div>
+				<div class="fotos">
+					<a class="fancybox-effects-d" href="img/foto/2.jpg" title="Наташа - платье Афина"><img src="img/foto/2.jpg" alt="" /></a>
+				</div>
+				<div class="fotos">
+					<a class="fancybox-effects-d" href="img/foto/3.jpg" title="Юлия - платье Private Label"><img src="img/foto/3.jpg" alt="" /></a>
+				</div>
+				<div class="fotos">
+					<a class="fancybox-effects-d" href="img/foto/4.jpg" title="Наташа - украинский костюм"><img src="img/foto/4.jpg" alt="" /></a>
+				</div>
+				<div class="fotos">
+					<a class="fancybox-effects-d" href="img/foto/5.jpg" title="Ольга - индивидуальный пошив"><img src="img/foto/5.jpg" alt="" /></a>
+				</div>
+				<div class="fotos">
+					<a class="fancybox-effects-d" href="img/foto/6.jpg" title="Татьяна - платье Софи"><img src="img/foto/6.jpg" alt="" /></a>
+				</div>
+				<div class="fotos">
+					<a class="fancybox-effects-d" href="img/foto/7.jpg" title="Марина- платье София Толи"><img src="img/foto/7.jpg" alt="" /></a>
+				</div>
+				<div class="fotos">
+					<a class="fancybox-effects-d" href="img/foto/8.jpg" title="Колекция Tony Bowls"><img src="img/foto/8.jpg" alt="" /></a>
+				</div>
+				<div class="fotos">
+					<a class="fancybox-effects-d" href="img/foto/9.jpg" title="Юлия - платье Private Label"><img src="img/foto/9.jpg" alt="" /></a>
+				</div>
+				<div class="fotos">
+					<a class="fancybox-effects-d" href="img/foto/10.jpg" title="Юлия - индивидуальный пошив"><img src="img/foto/10.jpg" alt="" /></a>
+				</div>
+				<div class="fotos">
+					<a class="fancybox-effects-d" href="img/foto/11.jpg" title="Ксюша - платье Принцесса"><img src="img/foto/11.jpg" alt="" /></a>
+				</div>
+				<div class="fotos">
+					<a class="fancybox-effects-d" href="img/foto/12.jpg" title="Наташа - платье Пион"><img src="img/foto/12.jpg" alt="" /></a>
+				</div>
+			</article>
+			<aside>
+				<div>
+					<h3><b>Новости</b></h3>
+					<p>Новые поступления бутоньерок</p>
+					<p>Новые поступления свадебных бокалов</p>
+					<p>Пополнение коллекции детских платьев для маленьких принцесс</p>
+					<p>Изготавливаем аксессуары и свадебный декор в одном стиле и цветовой гамме</p>
+					<p>Украшаем шампанское в разных стилях</p>
+					<h3><b>Акции</b></h3>
+					<p>Специальная цена на прокат свадебной арки для покупателей свадебного платья у нас в салоне</p>
+					<p>Специальные цены для подружек невесты при покупке свадебного платья у нас в салоне</p>
+					<p>Скидки на украшения свадебного кортежа при покупке свадебного платья у нас в салоне</p>
+					<h3><b>Распродажи</b></h3>
+					<p>Распродажа "дисконт-коллекции": все свадебные платья по 500 грн, все вечерние платья по 200 грн</p>
+				</div>
+			</aside>
+			<div class="tabs clear">
+			<div id="accordion">
+  				<h3>Продажа</h3>
+  				<div>
+					<p>Мы являемся производителями свадебных платьев, потому наши коллекции постоянно пополняются новыми моделями, которые отвечают последним тенденциям свадебной моды. Также у нас можно приобрести и модели известных украинских и зарубежных производителей, с которыми мы сотрудничаем.</p>
+				</div>
+				<h3>Прокат</h3>
+				<div>
+					<p>В нашем салоне действует услуга проката свадебных, вечерних и детских платьев. Самые выгодные условия проката: не требуем денежного залога, срок проката не влияет на цену, химчистка после проката уже включена в стоимость.</p>			
+				</div>
+				<h3>Индивидуальный пошив</h3>
+				<div>
+					<p>Предлагаем пошив свадебных, вечерних и детских платьев, танцевальных и концертных костюмов. Большой опыт в пошиве платьев нестандартных размеров (очень больших и очень маленьких), а также эксклюзивных моделей по эскизам заказчиков.</p>
+				</div>
+				<h3>Оформление свадебных церемоний</h3>
+				<div>
+					<p>Для оформления банкетного зала и выездной церемонии предлагаем арку из искусственных цветов, букеты и стойки для цветов, свадебный столик, чехлы на стулья и многое другое в разных цветовых исполнениях</p>
+				</div>
+			</div>
+			
+			</div>
+					
+			<div class="video clear">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/g6Y7isyohxg" allowfullscreen></iframe>
+			</div>
+				
+		</div>
+		<footer class="clear">
+			<div class="wrap">			
+				<p>&copy; 2015 Обручка г.Борисполь</p>
+			</div>		
+		</footer>
+	</body>		    
+</html>

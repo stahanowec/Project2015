@@ -1,0 +1,239 @@
+body>header{
+	height: 40px;
+}	
+
+/*Form*/
+	#form {
+		padding-top: 0;
+	}
+
+	#form input {
+		border: 1px solid #dddddd;
+		background-color: white;
+		font-size:13px;
+		color:#676767;
+		line-height: 18px;
+		padding: 7px 18px 8px;	
+		/*background: url(../images/form_Bg.png) 0 0 repeat;*/
+		width: 100%;
+		height: 39px;
+		float:left;
+		font-family: Arial, Helvetica, sans-serif;
+		box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+	}
+
+	#form textarea {
+		border: 1px solid #dddddd;
+		/*background: url(../images/form_Bg.png.) 0 0 repeat;*/
+		font-size:13px;
+		color:#676767;
+		width: 100%;
+		height: 150px;
+		overflow: auto;
+		padding: 10px 18px 8px;
+		width:100%;
+		position: relative;
+		resize:none;
+		box-sizing: border-box;
+			-moz-box-sizing: border-box; 
+			-webkit-box-sizing: border-box;
+		float:left;
+		font-family: Arial, Helvetica, sans-serif;
+		margin: 0;
+	}
+
+	#form label {
+		position:relative;
+		display: block;
+		min-height: 59px;
+		width: 100%;
+	}
+
+	#form .error, #form .empty {
+		color: #FF0000;
+		display: none;
+		font-size: 11px;
+		line-height:14px;
+		width:auto;
+		position: absolute;
+		z-index: 999;
+		right: 5px;
+		top: 12px;
+		float:left;
+	}
+
+	#form.contact .error, #form.contact .empty {
+		top: 7px;
+	}
+
+	#form .error-empty {
+		display:none;
+		float:left;
+	}
+
+	.btns {
+		position:relative;
+		overflow:hidden;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+
+	.btns a.btn {
+		margin: 0 0 0 20px !important;
+		cursor: pointer;
+		padding: 5px 15px;
+		border:2px solid #B8B8B8;
+		background: rgba( 48, 155, 255, .1);
+		border-radius: 5px;
+	}
+
+	.message br {
+		height: 0;
+		line-height: 0;
+	}
+
+	#form .success {
+		border: 1px solid #dddddd;
+		display: none;
+		position: absolute;
+		width: 302px;
+		background: #fff;
+		text-align: center;
+		padding: 20px 10px;
+		z-index: 999;
+		box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+	}
+
+	.success_wrapper {
+		position: relative;	
+	}
+
+	fieldset{
+		border: none;
+	}
+
+/*/Form*/
+
+.tabs1 li{
+	line-height: 1em;
+}
+
+/*map*/
+	.map {
+		position: relative;
+		padding-bottom: 33%; 
+		height: 0;
+		overflow: hidden;
+	}
+
+	.map iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+/*/map*/
+
+@media screen and (min-width:480px) {
+
+	.tabs1{
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+	}
+
+
+@media screen and (min-width:768px) {
+	
+	#form {
+		padding-top: 3px;
+		width: 35%;
+		float: right;
+		box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;	
+	}
+	.map{
+		width: 65%;
+		float: left;
+		box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+	}
+
+	.btns {
+		padding-right: 50px;
+	}
+
+	.tabs{
+		margin:10px 0 0;
+		padding:0;
+		line-height: 50%;
+		display: block;
+		float: left;
+		position: relative;
+		width: 65%;
+		box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		  
+
+	}
+
+	.tabs1{
+		width: 50%;
+		box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		float: left;
+	}
+
+	.tabs1 li{
+		line-height: 1.5em;
+	}
+}
+
+
+@media screen and (min-width:992px) {
+	
+	.map{
+		width: 50%;
+	}
+	
+	#form{
+		width: 50%;
+	}
+
+	.tabs{
+		width: 50%;
+	}
+
+	#form textarea{
+		height: 250px;
+	}
+
+}
+
+@media screen and (min-width:1200px) {
+	
+	body>header .wrap{width:75em}
+
+	.wrap{
+		width: 1200px;		
+	}
+	.b7{
+		margin-top:1em;
+		height: 300px;
+	}
+	fieldset{
+		margin-top: 50px;
+	}	
+}

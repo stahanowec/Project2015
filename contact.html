@@ -1,0 +1,112 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Контакты</title>
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="http://allfont.ru/allfont.css?fonts=bodoni" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">		
+		<link rel="stylesheet" href="css/style_contact.css" type="text/css" media="all">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- validate form -->
+		<script src="js/my_contact.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/forms.js"></script>		
+		<!--[if lt IE 8]>
+			<div style=' clear: both; text-align:center; position: relative;'>
+				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+    			</a>
+  			</div>
+		<![endif]-->
+     	<!--[if lt IE 9]>
+      		<script src="js/html5shiv.js"></script>
+    		<link  type="text/css" media="screen" href="css/ie.css">
+    	<![endif]-->
+	</head>	
+	<body>		
+		<header> 
+			<div  class="wrap">
+				<a class="logo" href="index.html">
+					<i class="site_title">Обручка</i>
+					<i class="site_description">Свадебный салон</i>
+				</a>
+				<i class="nav_btn"></i>
+				<nav>
+					<ul class="first_level">
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="portfolio.html">Портфолио</a>
+							<ul class="second_level">
+								<li><a href="#">Свадебные платья</a></li>
+								<li><a href="#">Вечерние платья</a></li>
+								<li><a href="#">Детские платья</a></li>
+							</ul>
+						</li>						
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>		
+		</header>
+		<div class="wrap">
+		    <img src="img/slide.jpg" alt="#">
+			
+			<form id="form">
+			    <div class="success_wrapper">
+			      	<div class="success">Контактная форма<br>
+			      		<strong>Здесь Вы можете оставить нам сообщение</strong>
+			      	</div>
+			    </div>
+			    <fieldset>
+				   	<label class="name">
+				   		<input type="text" value="Имя:">
+				   		<br class="clear">
+				      	<span class="error error-empty">*Это не коректное имя</span><span class="empty error-empty">*Это обязательное поле</span> </label>
+				    <label class="email">
+				      	<input type="text" value="E-mail:">
+				      	<br class="clear">
+				      	<span class="error error-empty">*Это не действующий почтовый ящик</span><span class="empty error-empty">*Это обязательное поле</span> </label>
+				    <label class="phone">
+				      	<input type="tel" value="Телефон:">
+				      	<br class="clear">
+				      	<span class="error error-empty">*Это не коректный номер телефона</span><span class="empty error-empty">*Это обязательное поле</span> </label>
+				    <label class="message">
+				      	<textarea class="textarea100">Сообщение:</textarea>
+				      	<br class="clear">
+				      	<span class="error">*Сообщение слишком короткое.</span> <span class="empty">*Это обязательное поле</span> </label>
+				    <div class="clear"></div>
+				    <div class="btns" role="button"><a data-type="reset" class="btn">clear</a><a data-type="submit" class="btn">submit</a>
+				      		<div class="clear"></div>
+			      		</div>
+			    </fieldset>
+			</form>
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2545.968280262337!2d30.958007499999976!3d50.348497000000016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4e8b1f7132b3d%3A0x99550b40e6a23138!2z0LLRg9C7LiDQlNC30LXRgNC20LjQvdGB0YzQutC-0LPQviwgNCwg0JHQvtGA0LjRgdC_0ZbQu9GMLCDQmtC40ZfQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGM!5e0!3m2!1sru!2sua!4v1438721750591" width="600" height="450" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="tabs">
+				<div class="tabs1">
+	  				<h3>Адрес</h3>
+						<p>г.Борисполь ул.Дзержинского, 4</p>
+					<h3>Телефон</h3>
+						<p>+38 045 95 5-09-86 Укртелеком</p>
+						<p>+38 050 540-04-72 МТС</p>
+						<p>+38 098 859-99-54 КС</p>
+				</div>
+				<div class="tabs1">
+					<h3>График</h3>
+						    <ul>
+						      <li>Пн - Вт 10.00 - 18.00</li>
+						      <li>Сб - Вс 10.00 - 16.00</li>
+						      <li>Понедельник - выходной</li>
+						    </ul>
+					<p><a href="mailto:katya_kiev@ukr.net"><i>Email: katya_kiev@ukr.net</i></a></p>
+				</div>
+			</div>						
+		</div>		
+		<footer class="clear">
+			<div class="wrap">			
+				<p>&copy; 2015 Обручка г.Борисполь</p>
+			</div>
+		</footer>
+	</body>
+</html>
